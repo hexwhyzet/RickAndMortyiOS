@@ -25,7 +25,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.view.backgroundColor = UIColor.appColor(.bg)
         
-        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height + 10
+        let barHeight: CGFloat = searchController.searchBar.frame.height
         let displayHeight: CGFloat = self.view.frame.height
         
         myTableView.register(SearchCell.self, forCellReuseIdentifier: "search")
