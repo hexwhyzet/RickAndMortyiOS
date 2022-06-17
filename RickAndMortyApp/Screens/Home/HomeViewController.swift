@@ -1,10 +1,3 @@
-//
-//  HomeViewController.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 13.06.2022.
-//
-
 import UIKit
 
 final class HomeViewController: UIViewController {
@@ -19,15 +12,12 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .appColor(.bg)
-        
-        
         setupUI()
     }
     
     private func setupUI() {
         view.addSubview(mainStack)
+        view.backgroundColor = .appColor(.bg)
         mainStack.addArrangedSubview(titlesStack)
         titlesStack.addArrangedSubview(mainTitle)
         titlesStack.addArrangedSubview(secondTitle)
@@ -55,8 +45,6 @@ final class HomeViewController: UIViewController {
             mainStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             iconsList.heightAnchor.constraint(equalToConstant: 200)
         ])
-        
-        //        mainTitle.backgroundColor = .yellow
     }
     
     private lazy var mainStack: UIStackView = {
@@ -98,7 +86,6 @@ final class HomeViewController: UIViewController {
     }()
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
         present(BigPictureViewController(), animated: true)
     }
     

@@ -1,10 +1,3 @@
-//
-//  Logger.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 17.06.2022.
-//
-
 import Foundation
 
 enum Level: Int {

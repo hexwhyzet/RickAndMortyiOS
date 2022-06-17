@@ -1,10 +1,3 @@
-//
-//  FavouritesViewController.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 15.06.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -13,9 +6,13 @@ class FavouritesViewController: UITableViewController, UITabBarControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    func setupUI() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.title = "Favourites"
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appColor(.main)]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appColor(.main)!]
         
         tableView.backgroundColor = UIColor.appColor(.bg)
         

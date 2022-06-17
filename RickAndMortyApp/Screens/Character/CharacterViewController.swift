@@ -59,13 +59,6 @@ final class CharacterViewController: UIViewController {
         stack.addArrangedSubview(speciesCell)
         stack.addArrangedSubview(genderCell)
         
-        //        stack.isLayoutMarginsRelativeArrangement = true
-        //        stack.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0)
-        
-        //        view.backgroundColor = UIColor.green
-        //        scroll.backgroundColor = UIColor.red
-        //        stack.backgroundColor = UIColor.blue
-        
         view.subviews.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -90,7 +83,6 @@ final class CharacterViewController: UIViewController {
             stack.topAnchor.constraint(equalTo: scroll.topAnchor, constant: stackPadding),
             stack.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: stackPadding),
             stack.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: stackPadding),
-            //            stack.bottomAnchor.constraint(equalTo: scroll.bottomAnchor, constant: stackPadding),
         ])
         
         stack.layoutIfNeeded()

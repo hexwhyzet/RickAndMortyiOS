@@ -1,10 +1,3 @@
-//
-//  Character.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 10.06.2022.
-//
-
 import Foundation
 
 struct Character: Codable, Equatable {

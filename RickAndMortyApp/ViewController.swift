@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 26.04.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {

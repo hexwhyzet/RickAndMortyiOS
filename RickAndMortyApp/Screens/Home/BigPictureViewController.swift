@@ -1,10 +1,3 @@
-//
-//  BigPictureView.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 13.06.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -12,15 +5,14 @@ class BigPictureViewController : UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.appColor(.bg)
-        
-        scrollView.delegate = self
         setupUI()
     }
     
     func setupUI() {
         view.addSubview(scrollView)
+        view.backgroundColor = UIColor.appColor(.bg)
+        
+        scrollView.delegate = self
         scrollView.addSubview(imageView)
         
         let vWidth = self.view.frame.width
@@ -65,11 +57,10 @@ class BigPictureViewController : UIViewController, UIScrollViewDelegate {
     }()
     
     @objc func closeButtonAction() {
-//        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
     
-    private let closeButton: UIButton = {
+    private lazy var closeButton: UIButton = {
         let ret = UIButton()
         ret.setImage(UIImage(systemName: "xmark"), for: .normal)
         ret.tintColor = UIColor.appColor(.main)

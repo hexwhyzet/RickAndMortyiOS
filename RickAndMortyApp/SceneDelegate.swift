@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 26.04.2022.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -15,12 +8,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-          
         let window = UIWindow(windowScene: windowScene)
-//        window.rootViewController = CharacterViewController(model: model) // Your initial view controller.
         window.rootViewController = TabBar()
-//        window.rootViewController = TViewController()
-//        window.rootViewController = BigPictureViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

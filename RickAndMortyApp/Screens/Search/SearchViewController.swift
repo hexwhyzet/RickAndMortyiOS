@@ -1,10 +1,3 @@
-//
-//  SearchViewController.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 26.04.2022.
-//
-
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchResultsUpdating {
@@ -23,7 +16,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupUI()
     }
     
@@ -33,7 +26,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.view.backgroundColor = UIColor.appColor(.bg)
         
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height + 10
-        let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         
         myTableView.register(SearchCell.self, forCellReuseIdentifier: "search")
@@ -54,7 +46,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         recentLabel.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(recentLabel)
-        
         
         updateVisibility()
         
@@ -156,7 +147,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         ret.searchBar.searchTextField.backgroundColor = UIColor.appColor(.bg)
         ret.searchBar.searchTextField.font = UIFont.appFont(.SFTextSemibold, 16)
-        ret.searchBar.searchTextField.attributedPlaceholder =  NSAttributedString.init(string: "Search for character", attributes: [NSAttributedString.Key.foregroundColor:UIColor.appColor(.secondary)])
+        ret.searchBar.searchTextField.attributedPlaceholder =  NSAttributedString.init(string: "Search for character", attributes: [NSAttributedString.Key.foregroundColor:UIColor.appColor(.secondary)!])
         
         ret.searchBar.searchTextField.layer.cornerRadius = 10
         ret.searchBar.searchTextField.layer.borderWidth = 2

@@ -1,10 +1,3 @@
-//
-//  RickAndMortyAppTests.swift
-//  RickAndMortyAppTests
-//
-//  Created by Ваня on 17.06.2022.
-//
-
 import XCTest
 @testable import RickAndMortyApp
 

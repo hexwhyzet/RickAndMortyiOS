@@ -1,10 +1,3 @@
-//
-//  Network.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 12.06.2022.
-//
-
 import Foundation
 import os.log
 

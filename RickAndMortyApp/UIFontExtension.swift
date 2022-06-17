@@ -1,10 +1,3 @@
-//
-//  UIFontExtension.swift
-//  RickAndMortyApp
-//
-//  Created by Ваня on 07.06.2022.
-//
-
 import UIKit
 
 enum AppFonts {
