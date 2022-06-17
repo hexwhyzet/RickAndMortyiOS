@@ -5,17 +5,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         UITabBar.appearance().tintColor = UIColor.appColor(.main)
         UITabBar.appearance().unselectedItemTintColor = UIColor.appColor(.main)
-//        UINavigationBar.appearance().barTintColor = .yellow
-//        UINavigationBar.appearance().tintColor = .red
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appColor(.main)!]
-//        UINavigationBar.appearance().isTranslucent = true
         return true
     }
-    
-    // MARK: UISceneSession Lifecycle
     
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
